@@ -1,0 +1,38 @@
+--configuracion inicial
+git config --global user.name "Jaime Huamani"
+git config --global user.email jhuamanico@gmail.com
+
+--para crear un proyecto inicial git 
+git init
+-- para ver si hay algun cambio
+git status
+-- agregamos los cambios al espacio de trabajo 
+git add 
+-- cuando hacemos un commit agregamos a la rama local 
+git commit -m "mensaje"
+
+-- para crear una rama a partir de otra 
+--paso1 ubicarse dentro de la rama que quiero clonar
+git checkout master
+git checkout -b develop
+-- para saber en que rama se encuentra--
+git branch
+
+--para crear una rama a partir de otro---
+ git checkout -b feature/jaime
+ 
+ --para listar las versiones--
+ git log --oneline
+ 
+ --para eliminar una rama--
+ git branch -d feature/jaime
+
+
+
+
+-- flujo de trabajo - gitflow 
+master -> para produccion 
+develop -> para desarrollo 
+feature -> por desarrollador 
+hotfix -> error en produccion 
+ 
