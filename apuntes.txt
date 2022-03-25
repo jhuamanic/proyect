@@ -27,6 +27,11 @@ git branch
  --para eliminar una rama--
  git branch -d feature/jaime
 
+-- para corregir el comentario--
+git commit --amend -m "agrege texto a archivo2"
+
+--- para conbinar cambio de una rama a otra--
+git merge feature/james
 
 
 
